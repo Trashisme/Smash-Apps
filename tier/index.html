@@ -173,7 +173,7 @@
 		var gameSM64O = ["sm64o","mario","luigi","peach","yoshi","wario","waluigi","rosa","toad"];					
 		var gameArms= ["arms","sm","sw","nin","mm","mec","min","hel","kk","bb","tw","mb","lp","mis","st","dr"];					
 		var gameSA2= ["sa2r","sonic","shadow","amy","msonic"];
-		var gamedivekick = ["divekick","skill","ken","dive","pao","redact","kick","n","shoals"];
+		var gameDivekick = ["divekick","skill","ken","dive","pao","redact","kick","n","shoals"];
 		var singleTier = "<tr><td class='labelHolder' contenteditable='true' style='background-color:#FFFF7F'><span class='label'>NEW</span></td><td><div class='tier sort' id='rows'><div class='hiddenkid'></div></div></td><td><div id='settings'></div><div id='moveButtons'><div id='moveUp'></div><div id='moveDown'></div></div></td></tr>";
 		
 		var screenshotMode = false;
@@ -273,7 +273,7 @@
 				case "switchINJ2": changeGame(gameINJ2);break;
 				case "switchRoA": changeGame(gameRoA);break;
 				case "switchOW": changeGame(gameOW);break;
-				case "switchDivekick": changeGame(gamedivekick);break;
+				case "switchDivekick": changeGame(gameDivekick);break;
 				case "switchSM64O": changeGame(gameSM64O);break;
 				case "switchSA2Race": changeGame(gameSA2);break;
 				}
@@ -494,7 +494,7 @@
 				case "arms": changeGame(gameArms);break;			
 				case "sm64o": changeGame(gameSM64O);break;
 				case "sa2r": changeGame(gameSA2);break;
-				case "divekick": changeGame(gamedivekick);break;
+				case "divekick": changeGame(gameDivekick);break;
 }
 			for (var i = 1; i < processedCode.length; i++) {
 				$("tbody").append(singleTier);
