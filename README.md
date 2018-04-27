@@ -1,14 +1,8 @@
-Smash Apps
+Smash Apps (Update T.0)
 ==========
 
-A collection of useful web apps for Super Smash Bros.
+A Tier List created by the amazing <a href=”http://jcal.zone”>Quetzle<./a>, and edited by the spectacular <a href=”https://github.com/RandallStrife”>Randall Strife<./a>, then finally edited by <a href=”https://twitter.com/TrashIsMe_”>me!<./a>
 
-[Use them!](http://quetzle.github.io/smash-apps)
+[Use them!](https://trashisme.github.io/smash-apps/)
 
-Currently, the apps are:
-
-* [Stage Striking](http://quetzle.github.io/smash-apps/stage) - choose what stage to play on by banning certain stages!
-* [Tier List Maker](http://quetzle.github.io/smash-apps/tier) - create a tier list to show how you think the characters stack up!
-* [Color Ranks](http://quetzle.github.io/smash-apps/colors) - choose what your favorite colors are for each character!
-* [Color Tier List Maker](http://quetzle.github.io/smash-apps/colortiers) - create a tier list of every color in the game!
-[comment]: # (Lee is total garbage lol)
+[comment]: # (haha)
