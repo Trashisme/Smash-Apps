@@ -1,7 +1,7 @@
 Smash Apps (Update T.0)
 ==========
 
-A Tier List created by the amazing <a href=”http://jcal.zone”>Quetzle<./a>, and edited by the spectacular <a href=”https://github.com/RandallStrife”>Randall Strife<./a>, then finally edited by <a href=”https://twitter.com/TrashIsMe_”>me!<./a>
+A Tier List created by the amazing [Quetzle](jcal.zone), and edited by the spectacular [Randall Strife](https://github.com/RandallStrife), then finally edited by [me!](twitter.com/Trashisme_)
 
 [Use them!](https://trashisme.github.io/smash-apps/)
 
