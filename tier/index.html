@@ -101,7 +101,7 @@
 					<button id="switchGGREV">Guilty Gear Xrd -Revelator-</button>
 					<button id="switchBrawlhalla">Brawlhalla</button>
 					<button id="switchArms">Arms</button>
-					<button id="switchCorrinMode">SSB4 - Corrin Mode</button>
+					<button id="switch20XX">20XX</button>
 					<button id="switchOW">Overwatch</button>
 					<button id="switchSM64O">Super Mario 64 Online</button>
 					<button id="switchSA2Race">Sonic Adventure 2 Race</button>
@@ -165,14 +165,13 @@
 		var gameSSF2 = ["ssf2","1","2","3","4","5","39","6","7","8","38","9","10","11","12","13","14","Reuben","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37"];
 		var gameSSF2Photos = ["SSF2Photos","Mario","Luigi","Peach","Bowser","Yoshi","Wario","DK","Link","Zelda","Sheik","Pikachu","Jigglypuff","Falcon","MrGameAndWatch","Kirby","MetaKnight","BandanaDee","Fox","Falco","Marth","Pit","Samus","ZSS","Ness","ChibiRobo","Isaac","Sonic","Tails","BlackMage","Sora","MegaMan","PAC-MAN","Lloyd","Bomberman","Ichigo","Naruto","Luffy","Goku","Sandbag"];
 		var gameCrusade = ["crusade","mario", "drmario", "luigi", "weegee", "peach", "toad", "bowser", "petey", "waluigi", "wario", "ashley", "dk", "yoshi", "geno", "pikachu", "pichu", "jigglypuff", "mewtwo", "lucario", "lucno", "snivy", "samus", "zss", "ridley", "link", "toonlink", "ganondorf", "tingle", "olimar", "marth", "mspread", "mcenter", "fox", "falco", "krystal", "falcon", "kirby", "gooey", "metaknight", "ness", "lucas", "porky", "littlemac", "lilwiiu", "saki", "iceclimbers", "sona", "sopo", "rob", "duckhuntdog", "machrider", "mrgameandwatch", "snake", "bomberman", "sonic", "tails", "knuckles", "shadow", "ristar", "shantae", "negashantae", "rayman", "crash", "megaman", "ryu", "evilryu", "chunli", "phoenix", "pacman", "klonoa", "goku"]
-		var gameCorrinMode = ["ssb4r","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm"];
+		var game20XX = ["melee","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox","fox"];
 		var gameOW = ["ow","ana","bastion","doomfist","dva","genji","hanzo","junkrat","lucio","mccree","mei","mercy","orisa","pharah","reaper","reinhardt","roadhog","soldier","sombra","symmetra","torbjorn","tracer","widowmaker","winston","zarya","zenyatta"];
 		var gameBrawlhalla = ["bh","ada","asuri","azoth","barraza","bodvar","brynn","cassidy","diana","ember","gnash","hattori","jhala","koji","kor","lordvraxx","lucien","orion","queennai","ragnir","scarlet","sentinel","sirroland","teros","thatch","ulgrim","val","wushang","axe","bow","gauntlet","gun","hammer","katar","lance","spear","sword"];
 		var gameRoA = ["RoA","zetterburn", "orcane", "wrastor", "kragg", "forsburn", "maypul", "absa", "etalus", "oriandsein", "ranno", "clairen", "sylvanos", "elliana"];
 		var gameSM64O = ["sm64o","mario","luigi","peach","yoshi","wario","waluigi","rosa","toad"];					
 		var gameArms= ["arms","sm","sw","nin","mm","mec","min","hel","kk","bb","tw","mb","lp","mis","st","dr"];					
 		var gameSA2= ["sa2r","sonic","shadow","amy","msonic"];
-		var gameDivekick = ["divekick","baz", "mark", "stream", "skill", "ken", "dive", "pao", "redact", "kick", "n", "shoals", "jefai", "sensei"];
 		var singleTier = "<tr><td class='labelHolder' contenteditable='true' style='background-color:#FFFF7F'><span class='label'>NEW</span></td><td><div class='tier sort' id='rows'><div class='hiddenkid'></div></div></td><td><div id='settings'></div><div id='moveButtons'><div id='moveUp'></div><div id='moveDown'></div></div></td></tr>";
 		
 		var screenshotMode = false;
@@ -266,13 +265,12 @@
 				case "switchCrusade": changeGame(gameCrusade);break;
 				case "switchBrawlhalla": changeGame(gameBrawlhalla);break;
 				case "switchArms": changeGame(gameArms);break;
-				case "switchCorrinMode": changeGame(gameCorrinMode);break;
+				case "switch20XX": changeGame(game20XX);break;
 				case "switchMKX": changeGame(gameMKX);break;
 				case "switchINJ": changeGame(gameINJ);break;
 				case "switchINJ2": changeGame(gameINJ2);break;
 				case "switchRoA": changeGame(gameRoA);break;
 				case "switchOW": changeGame(gameOW);break;
-				case "switchDivekick": changeGame(gameDivekick);break;
 				case "switchSM64O": changeGame(gameSM64O);break;
 				case "switchSA2Race": changeGame(gameSA2);break;
 				}
@@ -372,7 +370,6 @@
 					case "arms": changeGame(gameArms);break;					
 					case "sm640": changeGame(gameSM64O);break;
 					case "sa2r": changeGame(gameSA2);break;	
-					case "divekick": changeGame(gameDivekick);break;
 }
 				loadCode(currentGameChars[0]+"==S|0==A|1==B|3==C|5==D|7==E|8==F|9");
 			}
@@ -493,7 +490,6 @@
 				case "arms": changeGame(gameArms);break;			
 				case "sm64o": changeGame(gameSM64O);break;
 				case "sa2r": changeGame(gameSA2);break;
-				case "divekick": changeGame(gameDivekick);break;
 }
 			for (var i = 1; i < processedCode.length; i++) {
 				$("tbody").append(singleTier);
@@ -534,9 +530,9 @@
 			tierlistSize();
 		})
 		
-		function maleCorrinMode() {
-			$('<style>* { background: url(\'img/ssb4r/corrinm.png\'); }</style>').appendTo('head');
-			changeGame(gameCorrinMode);
+		function 20XX() {
+			$('<style>* { background: url(\'img/melee/fox\'); }</style>').appendTo('head');
+			changeGame(game20XX);
 		}
 	</script>
 </body>
