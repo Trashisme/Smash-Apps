@@ -85,7 +85,8 @@
 					<button id="switchSSB4Renders">Super Smash Bros. 4 (Renders)</button>
 					<button id="switchSSB4Inktober">Super Smash Bros. 4 (Inktober 2017)</button>
 					<button id="switchPM">Project M</button>
-					<button id="switchCL">Colbalt Legacy</button>					<button id="switchSSF1">Super Smash Flash</button>
+					<button id="switchCL">Colbalt Legacy</button>					
+					<button id="switchSSF1">Super Smash Flash</button>
 					<button id="switchSSF2">Super Smash Flash 2</button>
 					<button id="switchSSF2Photos">Super Smash Flash 2 Photos</button>
 					<button id="switchCrusade">Project Crusade</button>
@@ -99,10 +100,11 @@
 					<button id="switchINJ2">Injustice 2</button>
 					<button id="switchGGREV">Guilty Gear Xrd -Revelator-</button>
 					<button id="switchBrawlhalla">Brawlhalla</button>
-					<button id="switchArms">Arms</button>					<button id="switchCorrinMode">SSB4 - Corrin Mode</button>
+					<button id="switchArms">Arms</button>					
+					<button id="switchCorrinMode">SSB4 - Corrin Mode</button>
 					<button id="switchOW">Overwatch</button>
-				<button id="switchSM64O">Super Mario 64 Online</button>
-					<button id="switchMP">Mario Party</button>					<button id="switchSA2Race">Sonic Adventure 2 Race</button>
+					<button id="switchSM64O">Super Mario 64 Online</button>
+					<button id="switchSA2Race">Sonic Adventure 2 Race</button>
 					</div>
 				<p><strong>Changing your game will empty your tierlist!</strong> Do not click unless you are sure you want to change! You cannot undo this.</p>
 				<p>64, Melee, Brawl, and Smash 4 screenshot icons from <a href="http://ssbwiki.com">SmashWiki</a>. Smash 4 render icons made by /u/wafflepotamus. Project M screenshot icons made by /u/brewster_the_pigeon. Colbalt Legacy Icons made by the amazing DS#0518. Thank you DS! SSF2 screenshot icons made by /u/AxeEnding999, SSF2 Photos and Crusade made b /u/CSwooly and the Project Crusade Dev Team res. Brawl Minus icons made by /u/mslb99. Street Fighter V icons from <a href="http://sfv-wiki.com/wiki/STREET_FIGHTER_V_Wiki">SFV-Wiki</a>. Guilty Gear screenshot from <a href="http://www.dustloop.com/wiki/index.php/Guilty_Gear_Xrd_-REVELATOR-">Dustloop GG Rev Wiki</a>. Overwatch icons made by Blizzard Entertainment.</p>
@@ -166,7 +168,7 @@
 		var gameCorrinMode = ["ssb4r","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm"];
 		var gameOW = ["ow","ana","bastion","doomfist","dva","genji","hanzo","junkrat","lucio","mccree","mei","mercy","orisa","pharah","reaper","reinhardt","roadhog","soldier","sombra","symmetra","torbjorn","tracer","widowmaker","winston","zarya","zenyatta"];
 		var gameBrawlhalla = ["bh","ada","asuri","azoth","barraza","bodvar","brynn","cassidy","diana","ember","gnash","hattori","jhala","koji","kor","lordvraxx","lucien","orion","queennai","ragnir","scarlet","sentinel","sirroland","teros","thatch","ulgrim","val","wushang","axe","bow","gauntlet","gun","hammer","katar","lance","spear","sword"];
-		var gameRoA = ["RoA","zetterburn", "orcane", "wrastor", "kragg", "forsburn", "maypul", "absa", "etalus", "oriandsein", "ranno", "clairen","sylvanos","elliana"];
+		var gameRoA = ["RoA","zetterburn", "orcane", "wrastor", "kragg", "forsburn", "maypul", "absa", "etalus", "oriandsein", "ranno", "clairen", "sylvanos", "elliana"];
 		
 	var gameSM64O = 
 ["sm64o","mario","luigi","peach","yoshi","wario","waluigi","rosa","toad"];					var gameArms= ["arms","sm","sw","nin","mm","mec","min","hel","kk","bb","tw","mb","lp","mis","st","dr"];					var gameMP = 
@@ -266,14 +268,13 @@
 				case "switchCrusade": changeGame(gameCrusade);break;
 				case "switchBrawlhalla": changeGame(gameBrawlhalla);break;
 				case "switchArms": changeGame(gameArms);break;
-					case "switchCorrinMode": changeGame(gameCorrinMode);break;
+				case "switchCorrinMode": changeGame(gameCorrinMode);break;
 				case "switchMKX": changeGame(gameMKX);break;
 				case "switchINJ": changeGame(gameINJ);break;
 				case "switchINJ2": changeGame(gameINJ2);break;
 				case "switchRoA": changeGame(gameRoA);break;
 				case "switchOW": changeGame(gameOW);break;
-			case "switchSM64O": changeGame(gameSM64O);break;
-				case "switchMP": changeGame(gameMP);break;
+				case "switchSM64O": changeGame(gameSM64O);break;
 				case "switchSA2Race": changeGame(gameSA2);break;
 				}
 		});
@@ -351,9 +352,8 @@
 					case "bminus": changeGame(gameBrawlMinus);break;
 					case "zeus": changeGame(gameBrawlZeus);break;
 					case "pm": changeGame(gamePM);break;					
-case "CL": changeGame (gameCL);break;
-					(gameCL);break;
-case "ssb4": changeGame(gameSmash4);break;
+					case "CL": changeGame (gameCL);break;
+					case "ssb4": changeGame(gameSmash4);break;
 					case "SSB4Inktober": changeGame(SSB4Inktober);break;
 					case "USF2": changeGame(gameUSF2);break;
 					case "SF33S": changeGame(gameSF33S);break;
@@ -370,7 +370,8 @@ case "ssb4": changeGame(gameSmash4);break;
 					case "RoA": changeGame(gameRoA);break;
 					case "ow": changeGame(gameOW);break;
 					case "crusade": changeGame(gameCrusade);break;
-				case "arms": changeGame(gameArms);break;					case "sm640": changeGame(gameSM64O);break;
+					case "arms": changeGame(gameArms);break;					
+					case "sm640": changeGame(gameSM64O);break;
 					case "sa2r": changeGame(gameSA2);break;				
 }
 				loadCode(currentGameChars[0]+"==S|0==A|1==B|3==C|5==D|7==E|8==F|9");
