@@ -16,6 +16,7 @@
 			<button id="game">Change game</button>
 			<button id="help">Help</button>
 			<button id="reset">Reset</button>
+			<button id="idea">Have An Idea?</button>
 		</div>
 	</div>
 	
@@ -127,6 +128,10 @@
 				<p>Your image should appear above. You can copy or save this image. Try uploading it to an image hosting website such as <a href="http://imgur.com">Imgur</a>. Alternatively, copy the code below to share an editable version of your tierlist. Just paste a code into the box below and click "Run code" to access it.</p>
 			<textarea id="exportcode" cols="30" rows="8"></textarea><div><button id="runCode">Run code</button></div>
 			</div>
+			<div id="ideaMenu">
+				<span id="close"></span>
+				<p>Share Your Idea<a href="https://goo.gl/forms/35acVdG8fj4wMaAe2">Here!</a></p>
+			</div>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -230,6 +235,11 @@
 			$("#overlay").css("visibility", "visible");
 			$("#helpMenu").css("top",alignPopup($("#helpMenu")));
 		});
+		$(document).on("click", "#idea", function() { // open idea modal
+			$("#ideaMenu").css("display","block");
+			$("#overlay").css("opacity", 1);
+			$("#overlay").css("visibility", "visible");
+			$("#ideaMenu").css("top",alignPopup($("#ideaMenu")));
 		
 		$(document).on("click", "#colorselect span", function() { // change row label
 			for (var i = 0; i < $("#modal span").length; i++) {
@@ -285,6 +295,7 @@
 				$("#gameChange").css("display", "none");
 				$("#helpMenu").css("display", "none");
 				$("#screenshotShow").css("display", "none");
+				$("#ideaMenu").css("display", "none");
 			} else if(clicked == "screenshot") { // take a screenshot
 				$("#exportcode").val(toCode());
 				$("#modal").css("display", "none");
@@ -292,6 +303,7 @@
 				$("#helpMenu").css("display", "none");
 				$("#screenshotShow canvas").remove();
 				$("#screenshotShow").css("display","block");
+				$("#ideaMenu").css("display", "none");
 				$("#overlay").css("opacity", 1);
 				$("#overlay").css("visibility", "visible");
 				$("td:last-of-type").css("display","none");
