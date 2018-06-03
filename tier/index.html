@@ -84,6 +84,7 @@
 					<button id="switchSmash4">Super Smash Bros. 4 (Screenshots)</button>
 					<button id="switchSSB4Renders">Super Smash Bros. 4 (Renders)</button>
 					<button id="switchSSB4Inktober">Super Smash Bros. 4 (Inktober 2017)</button>
+					<button id="switchPoise">Poise</button>
 					<button id="switchPM">Project M</button>
 					<button id="switchCL">Colbalt Legacy</button>					
 					<button id="switchSSF1">Super Smash Flash</button>
@@ -147,6 +148,7 @@
 		var gameSmash4 = ["ssb4","mario","luigi","peach","bowser","yoshi","rosalinaluma","bowserjr","drmario","wario","donkeykong","diddykong","mrgamewatch","littlemac","link","zelda","sheik","ganondorf","toonlink","samus","zerosuitsamus","pit","palutena","darkpit","marth","ike","robin","lucina","roy","corrin","duckhunt","kirby","kingdedede","metaknight","fox","falco","pikachu","charizard","lucario","jigglypuff","greninja","mewtwo","rob","ness","lucas","captainfalcon","villager","olimar","wiifittrainer","shulk","pacman","megaman","ryu","sonic","cloud","bayonetta","miibrawler1","miigunner1","miisword1","miibrawler","miigunner","miisword"];
 		var gameSSB4Renders = ["ssb4r","mario","luigi","peach","bowser","yoshi","rosalinaluma","bowserjr","wario","donkeykong","diddykong","mrgamewatch","littlemac","link","zelda","sheik","ganondorf","toonlink","samus","zerosuitsamus","pit","palutena","marth","ike","robin","duckhunt","kirby","kingdedede","metaknight","fox","falco","pikachu","charizard","lucario","jigglypuff","greninja","rob","ness","captainfalcon","villager","olimar","wiifittrainer","shulk","drmario","darkpit","lucina","pacman","megaman","sonic","mewtwo","lucas","roy","ryu","cloud","corrin","bayonetta","miibrawler1","miigunner1","miisword1","miibrawler","miigunner","miisword"];
 		var gameSSB4Inktober = ["ssb4inktober","mario","luigi","peach","bowser","yoshi","rosalina","bowserjr","drmario","wario","dk","diddykong","gameandwatch","littlemac","link","zelda","sheik","ganondorf","toonlink","samus","zerosuitsamus","pit","palutena","darkpit","marth","ike","robin","lucina","roy","corrin","duckhunt","kirby","dedede","metaknight","fox","falco","pikachu","charizard","lucario","jigglypuff","greninja","mewtwo","rob","ness","lucas","falcon","villager","olimar","wiifittrainer","shulk","pacman","megaman","ryu","sonic","cloud","bayonetta","miibrawler","miigunner","miiswordfighter","miibrawler1111","miigunner1111","miiswordfighter1111"];
+		var gamePoise = ["poise","mario","mrgamewatch","link","fox","jigglypuff","lucas","captainfalcon","sonic"];	
 		var gameMelee = ["melee","drmario","mario","luigi","bowser","peach","yoshi","dk","falcon","ganon","falco","fox","ness","icies","kirby","samus","zelda","sheik","link","ylink","pichu","pikachu","jigglypuff","mewtwo","gnw","marth","roy"];
 		var game64 = ["64","luigi","mario","dk","link","samus","falcon","ness","yoshi","kirby","fox","pikachu","jigglypuff"];
 		var gameBrawl = ["brawl","mario","luigi","peach","bowser","donkeykong","diddykong","yoshi","wario","link","zelda","sheik","ganondorf","toonlink","samus","zerosuitsamus","pit","iceclimbers","rob","kirby","metaknight","kingdedede","olimar","fox","falco","wolf","captainfalcon","pikachu","pokemontrainer","lucario","jigglypuff","marth","ike","ness","lucas","mrgamewatch","snake","sonic"];
@@ -275,6 +277,7 @@
 				case "switchOW": changeGame(gameOW);break;
 				case "switchSM64O": changeGame(gameSM64O);break;
 				case "switchSA2Race": changeGame(gameSA2);break;
+				case "switchPoise": changeGame(gamePoise);break;
 				}
 		});
 			
@@ -373,7 +376,8 @@
 					case "arms": changeGame(gameArms);break;					
 					case "sm640": changeGame(gameSM64O);break;
 					case "sa2r": changeGame(gameSA2);break;	
-}
+					case "Poise": changeGame(gamePoise);break;
+				}
 				loadCode(currentGameChars[0]+"==S|0==A|1==B|3==C|5==D|7==E|8==F|9");
 			}
 		});
@@ -494,6 +498,7 @@
 				case "arms": changeGame(gameArms);break;			
 				case "sm64o": changeGame(gameSM64O);break;
 				case "sa2r": changeGame(gameSA2);break;
+				case "Poise": changeGame(gamePoise);break;
 }
 			for (var i = 1; i < processedCode.length; i++) {
 				$("tbody").append(singleTier);
