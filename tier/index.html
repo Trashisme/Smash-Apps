@@ -103,6 +103,7 @@
 					<button id="switchBrawlhalla">Brawlhalla</button>
 					<button id="switchArms">Arms</button>
 					<button id="switchOW">Overwatch</button>
+					<button id="switchMP">Mario Party Ranking</button>
 					<button id="switchSM64O">Super Mario 64 Online</button>
 					</div>
 				<p><strong>Changing your game will empty your tierlist!</strong> Do not click unless you are sure you want to change! You cannot undo this.</p>
@@ -144,30 +145,41 @@
 		var singleChar = "<div class='character'></div>";
 		var gameSmash4 = ["ssb4","mario","luigi","peach","bowser","yoshi","rosalinaluma","bowserjr","drmario","wario","donkeykong","diddykong","mrgamewatch","littlemac","link","zelda","sheik","ganondorf","toonlink","samus","zerosuitsamus","pit","palutena","darkpit","marth","ike","robin","lucina","roy","corrin","duckhunt","kirby","kingdedede","metaknight","fox","falco","pikachu","charizard","lucario","jigglypuff","greninja","mewtwo","rob","ness","lucas","captainfalcon","villager","olimar","wiifittrainer","shulk","pacman","megaman","ryu","sonic","cloud","bayonetta","miibrawler1","miigunner1","miisword1","miibrawler","miigunner","miisword"];
 		var gameSSB4Renders = ["ssb4r","mario","luigi","peach","bowser","yoshi","rosalinaluma","bowserjr","wario","donkeykong","diddykong","mrgamewatch","littlemac","link","zelda","sheik","ganondorf","toonlink","samus","zerosuitsamus","pit","palutena","marth","ike","robin","duckhunt","kirby","kingdedede","metaknight","fox","falco","pikachu","charizard","lucario","jigglypuff","greninja","rob","ness","captainfalcon","villager","olimar","wiifittrainer","shulk","drmario","darkpit","lucina","pacman","megaman","sonic","mewtwo","lucas","roy","ryu","cloud","corrin","bayonetta","miibrawler1","miigunner1","miisword1","miibrawler","miigunner","miisword"];
-		var gamePoise = ["poise","mario","mrgamewatch","link","fox","jigglypuff","lucas","captainfalcon","sonic"];	
+		var gamePoise = 
+["poise","mario","mrgamewatch","link","fox","jigglypuff","lucas","captainfalcon","sonic"];	
 		var gameMelee = ["melee","drmario","mario","luigi","bowser","peach","yoshi","dk","falcon","ganon","falco","fox","ness","icies","kirby","samus","zelda","sheik","link","ylink","pichu","pikachu","jigglypuff","mewtwo","gnw","marth","roy"];
-		var game64 = ["64","luigi","mario","dk","link","samus","falcon","ness","yoshi","kirby","fox","pikachu","jigglypuff"];
+		var game64 = 
+["64","luigi","mario","dk","link","samus","falcon","ness","yoshi","kirby","fox","pikachu","jigglypuff"];
 		var gameBrawl = ["brawl","mario","luigi","peach","bowser","donkeykong","diddykong","yoshi","wario","link","zelda","sheik","ganondorf","toonlink","samus","zerosuitsamus","pit","iceclimbers","rob","kirby","metaknight","kingdedede","olimar","fox","falco","wolf","captainfalcon","pikachu","pokemontrainer","lucario","jigglypuff","marth","ike","ness","lucas","mrgamewatch","snake","sonic"];
 		var gamePM = ["pm","wario","mario","luigi","peach","bowser","yoshi","donkeykong","diddykong","falcon","wolf","fox","falco","icies","zelda","sheik","link","toonlink","ganon","mewtwo","lucario","pikachu","jigglypuff","squirtle","ivysaur","charizard","samus","zerosuit","lucas","ness","pit","kirby","metaknight","dedede","ike","marth","roy","olimar","rob","gnw","snake","sonic"];
 		var gameCL = ["CL","wario","mario","luigi","peach","bowser","yoshi","waluigi","donkeykong","diddykong","geno","falcon","wolf","fox","falco","icies","zelda","sheik","link","toonlink","ganon","pgannon","mewtwo","lucario","pikachu","jigglypuff","squirtle","ivysaur","charizard","blaziken","samus","zerosuit","ridley","lucas","ness","pit","kirby","metaknight","dedede","kjoe","ike","marth","roy","lucina","hector","chrom","lyn","bknight","olimar","rob","gnw","snake","sonic","tails","knuckles","shadow","meta","shulk","ryu","mac","cloud","bombman","zero","bass"];
 		var gameBrawlMinus = ["bminus","mario","luigi","peach","bowser","yoshi","donkeykong","diddy","wario","waluigi","link","zelda","sheik","ganondorf","toonlink","samus","zss","ness","lucas","pikachu","jigglypuff","pichu","mewtwo","squirtle","ivysaur","charizard","lucario","kirby","dedede","mk","fox","falco","wolf","marth","roy","ike","captainfalcon","gnw","iceclimbers","rob","pit","olimar","snake","sonic"];
 		var gameBrawlZeus = ["zeus","mario","luigi","peach","koopa","yoshi","dk","dd","wario","link","zelda","sheik","ganon","tlik","samus","zss","ness","lucas","pikachu","pichu","purin","m2","zenigame","fushigisou","lizardon","lucario","kirby","ddd","MK","fox","falco","wolf","marth","roy","ike","lucina","wayu","cf","gw","rob","pit","olimar","snake","sonic","4cloud","blackpit","cloudminus","geno","knuckles","lyn","mac","meta","ridley","ryu","shadow","shulk"];
 		var gameLXP = ["lxp","wario","doc","mario","luigi","waluigi","peach","bowser","yoshi","geno","donkeykong","diddykong","falcon","wolf","fox","falco","icies","zelda","sheik","link","toonlink","ylink","ganon","mgannon","mewtwo","lucario","pikachu","pichu","jigglypuff","squirtle","ivysaur","charizard","samus","zerosuit","crid","mrid","lucas","ness","pit","kirby","metaknight","dedede","ike","marth","roy","lucina","olimar","rob","gnw","snake","sonic","shadow","msonic"];
-		var gameUSF2 = ["USF2","akuma","balrog","blanka","cammy","chun-li","dee-jay","dhalsim","ehonda","evil-ryu", "fei-long","guile","ken","m-bison","ryu","sagat","t-hawk","vega","violent-ken","zangief"];
-		var gameSF33S = ["SF33S","akuma","alex","chun-li","dudley","elena","hugo","ibuki","ken","makoto","necro","oro","q","remy","ryu","sean","twelve","urien","yang","yun"];
+		var gameUSF2 = 
+["USF2","akuma","balrog","blanka","cammy","chun-li","dee-jay","dhalsim","ehonda","evil-ryu", "fei-long","guile","ken","m-bison","ryu","sagat","t-hawk","vega","violent-ken","zangief"];
+		var gameSF33S = 
+["SF33S","akuma","alex","chun-li","dudley","elena","hugo","ibuki","ken","makoto","necro","oro","q","remy","ryu","sean","twelve","urien","yang","yun"];
 		var gameUSF4 = ["USF4","ryu","ken","chunli","ehonda","zangief","blanka","guile","dhalsim","feilong","cammy","thawk","deejay","balrog","vega","sagat","mbison","akuma","sakura","dan","rose","cody","adon","dudley","elena","yang","yun","ibuki","makoto","guy","rolento","gen","evilryu","gouken","abel","rufus","elfuerte","juri","cviper","hakan","seth","oni","poison","decapre"];
 		var gameSFV = ["sfv","ryu","ken","chunli","blanka","dhalsim","guile","zangief","cammy","balrog","vega","sagat","mbison","akuma","nash","sakura","birdie","karin","cody","ibuki","alex","rmika","urien","juri","necalli","rashid","laura","fang","abigail","kolin","zeku","menat","ed","falke","g"];
 		var gameGGREV = ["ggrev","axl","bedman","chipp","elphelt","faust","ino","jacko","jam","johnny","kum","ky","leo","may","millia","potemkin","ramlethal","raven","sin","slayer","sol","venom","zato1","dizzy"];
 		var gameINJ2 = ["INJ2","batman","superman","wonderwoman","supergirl","aquaman","atrocitus","gorillagrodd","deadshot","harleyquinn","theflash","bluebeetle","bane","poisonivy","braniac","robin","blackcanary","swampthing","catwoman","cheetah","cyborg","doctorfate","greenlantern","firestorm","greenarrow","blackadam","captaincold","scarecrow","darkseid","joker","redhood","starfire","subzero","blackmanta","raiden","hellboy","atom","enchantress","leonardo","michelangelo","donatello","raphael"];
-		var gameSSF1 = ["SSF1","mario", "luigi", "link", "zelda", "sheik", "younglink", "samus", "kirby", "metaknight", "fox", "pikachu", "jigglypuff", "mewtwo", "falcon", "mrgameandwatch", "sonic", "tails", "knuckles", "shadow", "supersonic", "megamanx", "zero", "lloyd", "cloud", "crono", "inuyasha", "naruto", "mrincredible", "blade", "blue"];
+		var gameSSF1 = 
+["SSF1","mario", "luigi", "link", "zelda", "sheik", "younglink", "samus", "kirby", "metaknight", "fox", "pikachu", "jigglypuff", "mewtwo", "falcon", "mrgameandwatch", "sonic", "tails", "knuckles", "shadow", "supersonic", "megamanx", "zero", "lloyd", "cloud", "crono", "inuyasha", "naruto", "mrincredible", "blade", "blue"];
 		var gameSSF2 = ["ssf2","1","2","3","4","5","39","6","7","8","38","9","10","11","12","13","14","Reuben","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37"];
 		var gameSSF2Photos = ["SSF2Photos","Mario","Luigi","Peach","Bowser","Yoshi","Wario","DK","Link","Zelda","Sheik","Pikachu","Jigglypuff","Falcon","MrGameAndWatch","Kirby","MetaKnight","BandanaDee","Fox","Falco","Marth","Pit","Samus","ZSS","Ness","ChibiRobo","Isaac","Sonic","Tails","BlackMage","Sora","MegaMan","PAC-MAN","Lloyd","Bomberman","Ichigo","Naruto","Luffy","Goku","Sandbag"];
-		var gameCrusade = ["crusade","mario", "drmario", "luigi", "weegee", "peach", "toad", "bowser", "petey", "waluigi", "wario", "ashley", "dk", "yoshi", "geno", "pikachu", "pichu", "jigglypuff", "mewtwo", "lucario", "lucno", "snivy", "samus", "zss", "ridley", "link", "link2", "toonlink", "ganondorf", "tingle", "olimar", "marth", "mspread", "mcenter", "fox", "falco", "krystal", "falcon", "kirby", "gooey", "metaknight", "ness", "lucas", "porky", "littlemac", "lilwiiu", "saki", "iceclimbers", "sona", "sopo", "rob", "duckhuntdog", "machrider", "mrgameandwatch", "snake", "bomberman", "sonic", "tails", "knuckles", "shadow", "ristar", "shantae", "negashantae", "rayman", "crash", "megaman", "ryu", "evilryu", "chunli", "phoenix", "pacman", "klonoa", "goku"]
+		var gameCrusade = 
+["crusade","mario", "drmario", "luigi", "weegee", "peach", "toad", "bowser", "petey", "waluigi", "wario", "ashley", "dk", "yoshi", "geno", "pikachu", "pichu", "jigglypuff", "mewtwo", "lucario", "lucno", "snivy", "samus", "zss", "ridley", "link", "link2", "toonlink", "ganondorf", "tingle", "olimar", "marth", "mspread", "mcenter", "fox", "falco", "krystal", "falcon", "kirby", "gooey", "metaknight", "ness", "lucas", "porky", "littlemac", "lilwiiu", "saki", "iceclimbers", "sona", "sopo", "rob", "duckhuntdog", "machrider", "mrgameandwatch", "snake", "bomberman", "sonic", "tails", "knuckles", "shadow", "ristar", "shantae", "negashantae", "rayman", "crash", "megaman", "ryu", "evilryu", "chunli", "phoenix", "pacman", "klonoa", "goku"]
 		var gameOW = ["ow","ana","bastion","doomfist","dva","genji","hanzo","junkrat","lucio","mccree","mei","mercy","orisa","pharah","reaper","reinhardt","roadhog","soldier","sombra","symmetra","torbjorn","tracer","widowmaker","winston","zarya","zenyatta"];
 		var gameBrawlhalla = ["bh","ada","asuri","azoth","barraza","bodvar","brynn","cassidy","diana","ember","gnash","hattori","jhala","koji","kor","lordvraxx","lucien","orion","queennai","ragnir","scarlet","sentinel","sirroland","teros","thatch","ulgrim","val","wushang","axe","bow","gauntlet","gun","hammer","katar","lance","spear","sword"];
-		var gameRoA = ["RoA","zetterburn", "orcane", "wrastor", "kragg", "forsburn", "maypul", "absa", "etalus", "oriandsein", "ranno", "clairen", "sylvanos", "elliana"];
-		var gameSM64O = ["sm64o","mario","luigi","peach","yoshi","wario","waluigi","rosa","toad"];					
-		var gameArms= ["arms","sm","sw","nin","mm","mec","min","hel","kk","bb","tw","mb","lp","mis","st","dr"];					
+		var gameRoA = 
+["RoA","zetterburn", "orcane", "wrastor", "kragg", "forsburn", "maypul", "absa", "etalus", "oriandsein", "ranno", "clairen", "sylvanos", "elliana"];
+		var gameSM64O = 
+["sm64o","mario","luigi","peach","yoshi","wario","waluigi","rosa","toad"];					
+		var gameArms= 
+["arms","sm","sw","nin","mm","mec","min","hel","kk","bb","tw","mb","lp","mis","st","dr"];
+		var gameMP = 
+["MP","mp","mp2","mp3","mp4","mp5","mp6","mp7","mp8","mp9","mp10"];					
 		var singleTier = "<tr><td class='labelHolder' contenteditable='true' style='background-color:#FFFF7F'><span class='label'>NEW</span></td><td><div class='tier sort' id='rows'><div class='hiddenkid'></div></div></td><td><div id='settings'></div><div id='moveButtons'><div id='moveUp'></div><div id='moveDown'></div></div></td></tr>";
 		
 		var screenshotMode = false;
@@ -265,6 +277,7 @@
 				case "switchOW": changeGame(gameOW);break;
 				case "switchSM64O": changeGame(gameSM64O);break;
 				case "switchPoise": changeGame(gamePoise);break;
+				case "switchMP": changeGame(gameMP);break;
 				}
 		});
 			
@@ -360,6 +373,7 @@
 					case "arms": changeGame(gameArms);break;					
 					case "sm640": changeGame(gameSM64O);break;
 					case "Poise": changeGame(gamePoise);break;
+					case "MP": changeGame(gameMP);break;
 				}
 				loadCode(currentGameChars[0]+"==S|0==A|1==B|3==C|5==D|7==E|8==F|9");
 			}
@@ -478,6 +492,7 @@
 				case "arms": changeGame(gameArms);break;			
 				case "sm64o": changeGame(gameSM64O);break;
 				case "Poise": changeGame(gamePoise);break;
+				case "MP": changeGame(gameMP);break;
 }
 			for (var i = 1; i < processedCode.length; i++) {
 				$("tbody").append(singleTier);
