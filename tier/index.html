@@ -105,6 +105,7 @@
 					<button id="switchOW">Overwatch</button>
 					<button id="switchMP">Mario Party Ranking</button>
 					<button id="switchSM64O">Super Mario 64 Online</button>
+					<button id="switchDDLC">Best Girl?</button>
 					</div>
 				<p><strong>Changing your game will empty your tierlist!</strong> Do not click unless you are sure you want to change! You cannot undo this.</p>
 				<p>64, Melee, Brawl, and Smash 4 screenshot icons from <a href="http://ssbwiki.com">SmashWiki</a>. Smash 4 render icons made by /u/wafflepotamus. Project M screenshot icons made by /u/brewster_the_pigeon. Colbalt Legacy Icons made by the amazing DS#0518. Thank you DS! Legacy XP images by the amazing ESS | Shockbound#9326, great work! SSF2 screenshot icons made by /u/AxeEnding999, SSF2 Photos and Crusade made b /u/CSwooly and the Project Crusade Dev Team res. Brawl Minus icons made by /u/mslb99. Street Fighter V icons from <a href="http://sfv-wiki.com/wiki/STREET_FIGHTER_V_Wiki">SFV-Wiki</a>. Guilty Gear screenshot from <a href="http://www.dustloop.com/wiki/index.php/Guilty_Gear_Xrd_-REVELATOR-">Dustloop GG Rev Wiki</a>. Overwatch icons made by Blizzard Entertainment.</p>
@@ -179,7 +180,9 @@
 		var gameArms= 
 ["arms","sm","sw","nin","mm","mec","min","hel","kk","bb","tw","mb","lp","mis","st","dr"];
 		var gameMP = 
-["MP","mp","mp2","mp3","mp4","mp5","mp6","mp7","mp8","mp9","mp10"];					
+["MP","mp","mp2","mp3","mp4","mp5","mp6","mp7","mp8","mp9","mp10"];
+		var gameDDLC= 
+["DDLC","sayori","yuri","natsuki","monika"];						
 		var singleTier = "<tr><td class='labelHolder' contenteditable='true' style='background-color:#FFFF7F'><span class='label'>NEW</span></td><td><div class='tier sort' id='rows'><div class='hiddenkid'></div></div></td><td><div id='settings'></div><div id='moveButtons'><div id='moveUp'></div><div id='moveDown'></div></div></td></tr>";
 		
 		var screenshotMode = false;
@@ -278,6 +281,7 @@
 				case "switchSM64O": changeGame(gameSM64O);break;
 				case "switchPoise": changeGame(gamePoise);break;
 				case "switchMP": changeGame(gameMP);break;
+				case "switchDDLC": changeGame(gameDDLC);break;
 				}
 		});
 			
@@ -374,6 +378,7 @@
 					case "sm640": changeGame(gameSM64O);break;
 					case "Poise": changeGame(gamePoise);break;
 					case "MP": changeGame(gameMP);break;
+					case "DDLC": changeGame(gameDDLC);break;
 				}
 				loadCode(currentGameChars[0]+"==S|0==A|1==B|3==C|5==D|7==E|8==F|9");
 			}
@@ -493,6 +498,7 @@
 				case "sm64o": changeGame(gameSM64O);break;
 				case "Poise": changeGame(gamePoise);break;
 				case "MP": changeGame(gameMP);break;
+				case "DDLC": changeGame(gameDDLC);break;
 }
 			for (var i = 1; i < processedCode.length; i++) {
 				$("tbody").append(singleTier);
